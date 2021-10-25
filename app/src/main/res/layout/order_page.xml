@@ -103,7 +103,7 @@
                         android:layout_height="wrap_content"
                         android:text="@={order.tanggal_pemesanan}"
                         android:layout_marginVertical="10dp"
-                        android:hint="Tanggal Masuk Pegawai"/>
+                        android:hint="Tanggal Pemesanan"/>
 
                 </LinearLayout>
 
