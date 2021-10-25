@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_margin="8dp">
+    
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_nama"
+        android:padding="16dp"
+        android:hint="Nama Lengkap"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_noTelp"
+        android:padding="16dp"
+        android:hint="Nomor Telepon"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_tipeKamar"
+        android:padding="16dp"
+        android:hint="Tipe Kamar"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_noKamar"
+        android:padding="16dp"
+        android:hint="Nomor Kamar"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/edit_tanggalPemesanan"
+        android:padding="16dp"
+        android:hint="Tanggal Pemesanan"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox.Dense"/>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Perbarui"/>
+
+</LinearLayout>
