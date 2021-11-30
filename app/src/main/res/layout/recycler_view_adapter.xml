@@ -14,7 +14,7 @@
         android:layout_height="wrap_content"
         android:layout_width="match_parent"
         android:layout_marginBottom="5dp"
-        tools:context="fragment.FragmentList"
+        tools:context=".activity.ActivityList"
         android:id="@+id/parent">
 
         <ImageView
@@ -93,7 +93,7 @@
                         android:layout_height="wrap_content"
                         android:textSize="15dp"
                         android:layout_marginStart="70dp"
-                        android:text="@{data.harga}"/>
+                        android:text="@{data.hargaString}"/>
                 </LinearLayout>
             </LinearLayout>
         </LinearLayout>

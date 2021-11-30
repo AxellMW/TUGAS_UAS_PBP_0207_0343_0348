@@ -8,14 +8,14 @@
             type="com.example.ugdpbp.model.Order" />
         <variable
             name="activity"
-            type="com.example.ugdpbp.fragment.FragmentOrder" />
+            type="com.example.ugdpbp.activity.ActivityOrder" />
     </data>
 
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical"
-        tools:context=".fragment.FragmentOrder">
+        tools:context=".activity.ActivityOrder">
 
         <LinearLayout
             android:id="@+id/navbar"

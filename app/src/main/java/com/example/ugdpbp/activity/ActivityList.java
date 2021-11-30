@@ -1,4 +1,4 @@
-package com.example.ugdpbp.fragment;
+package com.example.ugdpbp.activity;
 
 import android.os.Bundle;
 
@@ -16,7 +16,7 @@ import com.example.ugdpbp.databinding.ListKamarBinding;
 
 import java.util.ArrayList;
 
-public class FragmentList extends AppCompatActivity{
+public class ActivityList extends AppCompatActivity{
     private ArrayList<Kamar> list;
     private RecyclerView rv;
     private RecyclerViewAdapter rv_adapter;
@@ -32,7 +32,7 @@ public class FragmentList extends AppCompatActivity{
         list = new ListKamar().kamar;
 
         rv = binding.rvPeserta;
-        rv_adapter = new RecyclerViewAdapter(FragmentList.this, list);
+        rv_adapter = new RecyclerViewAdapter(ActivityList.this, list);
 
         layoutManager = new LinearLayoutManager(getApplicationContext());
         rv.setLayoutManager(layoutManager);

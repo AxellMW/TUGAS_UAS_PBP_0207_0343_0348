@@ -159,7 +159,7 @@ public class OrderAdapter extends RecyclerView.Adapter<OrderAdapter.ViewHolder>{
 
     public class ViewHolder extends RecyclerView.ViewHolder {
         private TextView tvNamaLengkap, tvNoTelp, tvTipeKamar, tvNomorKamar, tvTanggalPemesanan;
-        private ImageButton btnDelete,btnEdit;
+        private Button btnDelete,btnEdit;
 
         public ViewHolder(@NonNull View itemView) {
             super(itemView);

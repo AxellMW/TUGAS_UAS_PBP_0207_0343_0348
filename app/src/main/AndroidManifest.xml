@@ -10,7 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.UGDPBP">
         <activity
-            android:name=".fragment.FragmentAwal"
+            android:name=".activity.ActivityAwal"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -31,11 +31,14 @@
             android:exported="true">
         </activity>
         <activity
-            android:name=".fragment.FragmentOrder"
+            android:name=".activity.ActivityOrder"
             android:exported="true">
         </activity>
         <activity
-            android:name=".fragment.FragmentList"
+            android:name=".activity.ActivityList"
+            android:exported="true">
+        </activity>
+        <activity android:name=".activity.ActivityHistory"
             android:exported="true">
         </activity>
         <activity

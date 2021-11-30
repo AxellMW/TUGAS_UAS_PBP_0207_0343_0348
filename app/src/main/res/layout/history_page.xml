@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     android:orientation="vertical"
     android:padding="16dp"
-    tools:context=".fragment.FragmentHistory">
+    tools:context=".activity.ActivityHistory">
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rv_orderList"

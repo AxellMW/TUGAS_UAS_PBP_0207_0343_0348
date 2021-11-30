@@ -1,4 +1,4 @@
-package com.example.ugdpbp.fragment;
+package com.example.ugdpbp.activity;
 
 import static android.content.ContentValues.TAG;
 
@@ -25,7 +25,7 @@ import com.example.ugdpbp.R;
 
 import java.util.Calendar;
 
-public class FragmentOrder extends AppCompatActivity {
+public class ActivityOrder extends AppCompatActivity {
     private EditText etNamaLengkap, etNoTelp, etTipeKamar, etNoKamar, etTglPesan;
     private Button btnHapus, btnTambah;
     private RecyclerView rv_orderlist;
@@ -52,7 +52,7 @@ public class FragmentOrder extends AppCompatActivity {
                 int month = calendar.get(Calendar.MONTH);
                 int day = calendar.get(Calendar.DAY_OF_MONTH);
                 DatePickerDialog dialog = new DatePickerDialog(
-                        FragmentOrder.this,
+                        ActivityOrder.this,
                         android.R.style.Theme_Holo_Light_Dialog_MinWidth,
                         dateSetListener,
                         year, month, day);
@@ -70,7 +70,7 @@ public class FragmentOrder extends AppCompatActivity {
             }
         };
 
-        userPreferences = new UserPreferences(FragmentOrder.this);
+        userPreferences = new UserPreferences(ActivityOrder.this);
 
         btnTambah.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -86,7 +86,7 @@ public class FragmentOrder extends AppCompatActivity {
                 }else if(!etTglPesan.getText().toString().isEmpty()){
                     addOrder();
                 }else {
-                    Toast.makeText(FragmentOrder.this, "Belum diisi!", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ActivityOrder.this, "Belum diisi!", Toast.LENGTH_SHORT).show();
                 }
 
             }
@@ -125,7 +125,7 @@ public class FragmentOrder extends AppCompatActivity {
                 order.setTanggal_pemesanan(tanggal_pemesanan);
                 order.setUser_id(userPreferences.getUserLogin().getId());
 
-                DatabaseClient.getInstance(FragmentOrder.this)
+                DatabaseClient.getInstance(ActivityOrder.this)
                         .getDatabase()
                         .orderDao()
                         .insertOrder(order);
@@ -136,7 +136,7 @@ public class FragmentOrder extends AppCompatActivity {
             @Override
             protected void onPostExecute(Void unused) {
                 super.onPostExecute(unused);
-                Toast.makeText(FragmentOrder.this, "Berhasil menambahkan data", Toast.LENGTH_SHORT).show();
+                Toast.makeText(ActivityOrder.this, "Berhasil menambahkan data", Toast.LENGTH_SHORT).show();
                 etNamaLengkap.setText("");
                 etNoTelp.setText("");
                 etTipeKamar.setText("");

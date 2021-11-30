@@ -13,10 +13,10 @@ import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 
+import com.example.ugdpbp.activity.ActivityHistory;
+import com.example.ugdpbp.activity.ActivityOrder;
 import com.example.ugdpbp.databinding.ActivityMainBinding;
-import com.example.ugdpbp.fragment.FragmentList;
-import com.example.ugdpbp.fragment.FragmentOrder;
-import com.example.ugdpbp.fragment.FragmentHistory;
+import com.example.ugdpbp.activity.ActivityList;
 import com.example.ugdpbp.Geolocation.Geolocation;
 import com.google.firebase.messaging.FirebaseMessaging;
 
@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
     public View.OnClickListener btnOrder = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent mainActivity = new Intent(MainActivity.this, FragmentOrder.class);
+            Intent mainActivity = new Intent(MainActivity.this, ActivityOrder.class);
             startActivity(mainActivity);
         }
     };
@@ -44,7 +44,7 @@ public class MainActivity extends AppCompatActivity {
     public View.OnClickListener btnList = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent mainActivity = new Intent(MainActivity.this, FragmentList.class);
+            Intent mainActivity = new Intent(MainActivity.this, ActivityList.class);
             startActivity(mainActivity);
         }
     };
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity {
     public View.OnClickListener btnHistory = new View.OnClickListener() {
         @Override
         public void onClick(View view) {
-            Intent mainActivity = new Intent(MainActivity.this, FragmentHistory.class);
+            Intent mainActivity = new Intent(MainActivity.this, ActivityHistory.class);
             startActivity(mainActivity);
         }
     };

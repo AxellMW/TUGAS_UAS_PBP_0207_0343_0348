@@ -1,4 +1,4 @@
-package com.example.ugdpbp.fragment;
+package com.example.ugdpbp.activity;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -11,7 +11,7 @@ import com.example.ugdpbp.Authentication.LoginActivity;
 import com.example.ugdpbp.Authentication.RegisterActivity;
 import com.example.ugdpbp.R;
 
-public class FragmentAwal extends AppCompatActivity {
+public class ActivityAwal extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +24,7 @@ public class FragmentAwal extends AppCompatActivity {
         btnMasuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent fragmentAwal = new Intent(FragmentAwal.this, LoginActivity.class);
+                Intent fragmentAwal = new Intent(ActivityAwal.this, LoginActivity.class);
                 startActivity(fragmentAwal);
             }
         });
@@ -32,7 +32,7 @@ public class FragmentAwal extends AppCompatActivity {
         btnDaftar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent fragmentAwal = new Intent(FragmentAwal.this, RegisterActivity.class);
+                Intent fragmentAwal = new Intent(ActivityAwal.this, RegisterActivity.class);
                 startActivity(fragmentAwal);
             }
         });
