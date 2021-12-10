@@ -5,7 +5,7 @@
     <data>
         <variable
             name="data"
-            type="com.example.ugdpbp.model.Kamar" />
+            type="com.example.ugdpbp.model.Daftar" />
         <variable
             name="imgURL"
             type="String" />

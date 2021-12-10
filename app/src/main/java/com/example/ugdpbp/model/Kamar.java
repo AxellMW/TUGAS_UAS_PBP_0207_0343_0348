@@ -1,31 +1,42 @@
 package com.example.ugdpbp.model;
 
-import android.widget.ImageView;
-
-import androidx.databinding.BindingAdapter;
-
-import com.bumptech.glide.Glide;
-import com.bumptech.glide.request.RequestOptions;
 
 public class Kamar {
-    public String nama_kamar;
-    public String tipe_kamar;
-    public int harga;
-    public String imgURL;
+    private Long id;
+    private String nama;
+    private String no_telp;
+    private String tipe_kamar;
+    private String no_kamar;
 
-    public Kamar(String nama_kamar, String tipe_kamar, int harga, String imgURL){
-        this.nama_kamar = nama_kamar;
+    public Kamar(String nama, String no_telp, String tipe_kamar, String no_kamar) {
+        this.nama = nama;
+        this.no_telp = no_telp;
         this.tipe_kamar = tipe_kamar;
-        this.harga = harga;
-        this.imgURL = imgURL;
+        this.no_kamar = no_kamar;
     }
 
-    public String getNama_kamar() {
-        return nama_kamar;
+    public Long getId() {
+        return id;
     }
 
-    public void setNama_kamar(String nama_kamar) {
-        this.nama_kamar = nama_kamar;
+    public void setId(Long id) {
+        this.id = id;
+    }
+
+    public String getNama() {
+        return nama;
+    }
+
+    public void setNama(String nama) {
+        this.nama = nama;
+    }
+
+    public String getNo_telp() {
+        return no_telp;
+    }
+
+    public void setNo_telp(String no_telp) {
+        this.no_telp = no_telp;
     }
 
     public String getTipe_kamar() {
@@ -36,38 +47,11 @@ public class Kamar {
         this.tipe_kamar = tipe_kamar;
     }
 
-    public int getHarga() {
-        return harga;
+    public String getNo_kamar() {
+        return no_kamar;
     }
 
-    public void setHarga(int harga) {
-        this.harga = harga;
-    }
-
-    public String getHargaString() {
-        return String.valueOf(harga);
-    }
-
-    public void setHargaString(String harga){
-        if(!harga.isEmpty()){
-            this.harga = Integer.parseInt(harga);
-        } else{
-            this.harga = 0;
-        }
-    }
-
-    public String getImgURL() {
-        return imgURL;
-    }
-
-    public void setImgURL(String imgURL) {
-        this.imgURL = imgURL;
-    }
-
-    @BindingAdapter("android:loadImage")
-    public static void loadImage(ImageView view, String imageURL){
-        Glide.with(view.getContext())
-                .load(imageURL).apply(new RequestOptions())
-                .into(view);
+    public void setNo_kamar(String no_kamar) {
+        this.no_kamar = no_kamar;
     }
 }

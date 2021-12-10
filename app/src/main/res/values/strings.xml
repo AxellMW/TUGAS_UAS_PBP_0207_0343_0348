@@ -8,6 +8,16 @@
     <string name="name">Nama</string>
     <string name="hotel_atma">HOTEL ATMA</string>
     <string name="jaya">JAYA</string>
+    <string name="pesan_kamar">Pesan Kamar</string>
+    <string name="edit_pesan">Edit Pesan</string>
+    <string name="layanan">Layanan</string>
+    <string name="nama">Nama</string>
+    <string name="no_telp">No Telp</string>
+    <string name="tipe_kamar">Tipe Kamar</string>
+    <string name="no_kamar">No Kamar</string>
+    <string name="simpan">Simpan</string>
+    <string name="batal">Batal</string>
+    <string name="email">Email</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="mapbox_access_token">pk.eyJ1IjoiYXhlbGxtdyIsImEiOiJja3VxazR1bDAwYW53Mm5sMGFjYXR1cnc2In0.LC6Gx5rf-Mvfk58DkKZAhg</string>

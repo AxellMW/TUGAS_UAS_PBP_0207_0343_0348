@@ -9,16 +9,16 @@ import androidx.databinding.DataBindingUtil;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.example.ugdpbp.R;
-import com.example.ugdpbp.model.Kamar;
+import com.example.ugdpbp.model.Daftar;
 import com.example.ugdpbp.databinding.RecyclerViewAdapterBinding;
 
 import java.util.List;
 
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapter.viewHolder>{
-    private List<Kamar> list;
+    private List<Daftar> list;
     private Context context;
 
-    public RecyclerViewAdapter(Context context, List<Kamar> list){
+    public RecyclerViewAdapter(Context context, java.util.List list){
         this.context = context;
         this.list = list;
     }
@@ -31,8 +31,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
 
     @Override
     public void onBindViewHolder(@NonNull viewHolder holder, final int position){
-        final Kamar kamar = list.get(position);
-        holder.bind(kamar);
+        final Daftar daftar = this.list.get(position);
+        holder.bind(daftar);
     }
 
     @Override
@@ -45,9 +45,9 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerViewAdapte
             this.binding = binding;
         }
 
-        public void bind(Kamar list){
-            binding.setData(list);
-            binding.setImgURL(list.imgURL);
+        public void bind(Daftar daftar){
+            binding.setData(daftar);
+            binding.setImgURL(daftar.imgURL);
             binding.executePendingBindings();
         }
     }

@@ -2,6 +2,11 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="com.example.ugdpbp">
 
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.CAMERA" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -9,6 +14,27 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.UGDPBP">
+        <activity
+            android:name=".qr.QRScannerActivity"
+            android:exported="true" />
+        <activity
+            android:name=".qr.QRStartActivity"
+            android:exported="true" />
+        <activity
+            android:name=".layanan.AddEditLayananActivity"
+            android:exported="true" />
+        <activity
+            android:name=".layanan.LayananAdapter"
+            android:exported="true" />
+        <activity
+            android:name=".layanan.LayananActivity"
+            android:exported="true" />
+        <activity
+            android:name=".kamar.AddEditKamarActivity"
+            android:exported="true" />
+        <activity
+            android:name=".kamar.KamarActivity"
+            android:exported="true" />
         <activity
             android:name=".activity.ActivityAwal"
             android:exported="true">
@@ -20,35 +46,25 @@
         </activity>
         <activity
             android:name=".Authentication.LoginActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".Authentication.RegisterActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".MainActivity"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".activity.ActivityOrder"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
         <activity
             android:name=".activity.ActivityList"
-            android:exported="true">
-        </activity>
-        <activity android:name=".activity.ActivityHistory"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
+        <activity
+            android:name=".activity.ActivityHistory"
+            android:exported="true" />
         <activity
             android:name=".Geolocation.Geolocation"
-            android:exported="true">
-        </activity>
+            android:exported="true" />
     </application>
-
-    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
-    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION"/>
-    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

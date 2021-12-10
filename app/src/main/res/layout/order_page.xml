@@ -63,7 +63,8 @@
                         android:layout_height="wrap_content"
                         android:inputType="text"
                         android:text="@={order.nama_lengkap}"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="8dp"
                         android:hint="Nama Lengkap"/>
 
                     <EditText
@@ -73,7 +74,8 @@
                         android:layout_height="wrap_content"
                         android:inputType="text"
                         android:text="@={order.no_telp}"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="8dp"
                         android:hint="Nomor Telepon"/>
 
                     <EditText
@@ -83,7 +85,8 @@
                         android:layout_height="wrap_content"
                         android:inputType="text"
                         android:text="@={order.tipe_kamar}"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="8dp"
                         android:hint="Tipe Kamar"/>
 
                     <EditText
@@ -93,7 +96,8 @@
                         android:layout_height="wrap_content"
                         android:inputType="text"
                         android:text="@={order.no_kamar}"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="8dp"
                         android:hint="Nomor Kamar"/>
 
                     <EditText
@@ -102,7 +106,8 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:text="@={order.tanggal_pemesanan}"
-                        android:layout_marginVertical="10dp"
+                        android:layout_marginHorizontal="16dp"
+                        android:layout_marginTop="8dp"
                         android:hint="Tanggal Pemesanan"/>
 
                 </LinearLayout>

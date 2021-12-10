@@ -90,7 +90,7 @@ public class LoginActivity extends AppCompatActivity {
                     Toast.makeText(LoginActivity.this, "Username atau password salah", Toast.LENGTH_SHORT).show();
                 }else {
                     Toast.makeText(LoginActivity.this, "Berhasil login", Toast.LENGTH_SHORT).show();
-                    userPreferences.setUser(user.getId(),user.getName(), user.getUsername(),user.getPassword());
+                    userPreferences.setUser(user.getId(), user.getName(), user.getUsername(), user.getPassword());
                 }
                 checkLogin();
 
